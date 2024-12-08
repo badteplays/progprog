@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #332d29; /* Body background color */
+        }
+
+        .top-bar {
+            padding: 20px;
+            background-color: #72383d; /* Top bar background color */
+            color: #fff;
+            text-align: left;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #FCDCDC; /* Container background color */
+            border: 1px solid #AC9C8D; /* Border color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .settings-item {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #72383d; /* Label color */
+        }
+
+        .input {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #AC9C8D; /* Input border color */
+        }
+
+        .button {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #72383d; /* Button background color */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #AC9C8D; /* Button hover color */
+        }
+
+        .toggle-button {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-button input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .toggle-button label {
+            font-weight: bold;
+            color: #72383d; /* Toggle label color */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="dashboard.html" class="back-button">
+            <i class="fas fa-arrow-left" style="font-size: 24px;"></i>
+        </a>
+    </div>
+    <div class="container">
+        <h2 style="color: #72383d;">Settings</h2> <!-- Heading color -->
+        <div class="settings-item">
+            <label class="label">Language Preference</label>
+            <select class="input">
+                <option value="en">English</option>
+                <option value="tl">Tagalog</option>
+                <option value="ja">Japanese</option>
+            </select>
+        </div>
+        <div class="settings-item">
+            <label class="label">Font Size</label>
+            <input type="number" class="input" value="16">
+        </div>
+        <div class="settings-item">
+            <label class="label">Change Password</label>
+            <button class="button">Change Password</button>
+        </div>
+        <div class="settings-item">
+            <label class="label">Change Email</label>
+            <button class="button">Change Email</button>
+        </div>
+        <div class="settings-item">
+            <label class="label">Two-Factor Authentication</label>
+            <div class="toggle-button">
+                <input type="checkbox" id="two-factor-auth" />
+                <label for="two-factor-auth">Enable</label>
+            </div>
+        </div>
+        <div class="settings-item">
+            <label class="label">Assignment/Module Reminders</label>
+            <div class="toggle-button">
+                <input type="checkbox" id="reminders" />
+                <label for="reminders">On</label>
+            </div>
+        </div>
+        <div class="settings-item">
+            <label class="label">Logout</label>
+            <a href="login.html"><button class="button">Logout</button></a>
+        </div>
+    </div>
+</body>
+</html>
