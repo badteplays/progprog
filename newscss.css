@@ -1,0 +1,142 @@
+body {
+    overflow: hidden;
+    background-color: #3D212B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.username {
+    position: fixed;
+    top: 4%;
+    right: 12%;
+    font-size: 1.2em;
+}
+
+.profile-picture {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    width: 6%;
+    height: 10%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #3D212B;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 5px solid #AC9C8D;
+}
+
+.sidebar-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #AC9C8D;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.sidebar-item:hover {
+    background-color: #AC9C8D;
+}
+
+.container {
+   position: relative;
+margin-left: 20%;
+ padding: 20px;
+    font-family: 'Roboto', sans-serif;
+ border: solid 5px #72383d;
+ border-radius: 25px;
+  background-color: #AC9C8D;
+height: 90vh;
+    overflow-y: hidden;
+}
+
+h1 {
+   font-size: 2.5em;
+ color: #333;
+text-align: center;
+ margin-bottom: 20px;
+}
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    border: 2px solid #72383d;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    font-size: 1.8em;
+    color: #3D212B;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.users-online {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #AC9C8D;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #72383d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.1em;
+    width: 200px;
+    text-align: center;
+}
+
+.users-online h3 {
+    margin: 0 0 10px 0;
+}
+
+.profile-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-pictures img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+
