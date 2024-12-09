@@ -356,7 +356,7 @@ width: 350%;
 font-family: 'Dancing Script', cursive;
 
 }
-a[href="Terms&Condition"] button {
+a[href="Terms.html"] button {
 position: relative; 
 left: -12%;
 width: 120%;
@@ -392,6 +392,15 @@ border-radius: 5px;
 padding: 0.1%;
 font-family: 'Dancing Script', cursive;
 
+}
+.ContactUs:focus ~ .contact-us{
+    opacity:1;
+    pointer-events: auto;
+}
+.contact-us{
+    opacity:0;
+    transition:0.5s;
+    pointer-events: none;
 }
 
 .maincont{
@@ -804,4 +813,46 @@ z-index: 5;
     border-radius: 50%;
     border: 2px solid #fff;
 }
-
+
+:root {
+    --primary-color: #72383d;
+    --secondary-color: #FCDCDC;
+    --font-size: 1rem;
+    --spacing: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contact-us {
+    width:90vw;
+    aspect-ratio:16/9;
+    border: inset 0.7em var(--primary-color);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5em);
+    color: var(--primary-color);
+    padding: var(--spacing) 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    z-index:10;
+}
+
+.contact-us h2 {
+    margin: 0;
+    font-size: 4rem;
+font-weight: bold;    /* Adjusting font size using rem */
+}
+
+.contact-us p {
+    font-size: var(--font-size);
+}
