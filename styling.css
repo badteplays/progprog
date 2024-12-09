@@ -105,14 +105,14 @@ object-fit: cover;
 
 position: absolute;
 bottom: 96.5%;
-right: 0;
+right: -20%;
 }
 
 .search-icon {
 position: absolute; 
 right: 0%;
 bottom: 96.5%;
-width: 3%;
+width: 2%;
 aspect-ratio:1/1;
 cursor: pointer;
 border-radius: 25%; 
@@ -774,3 +774,34 @@ z-index: 5;
 .flexcol .flexrowar .icons:nth-child(2) {
     background-image: url('Assignments.png');
 }
+
+.users-online {
+    background-color: #AC9C8D;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #72383d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.1em;
+    width: 200px;
+    text-align: center;
+}
+
+.users-online h3 {
+    margin: 0 0 10px 0;
+}
+
+.profile-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-pictures img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
