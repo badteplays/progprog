@@ -304,7 +304,7 @@
     </style>
 </head> 
 <body>
-    <a href="dashbpard.html">   
+    <a href="index.html">   
         <div class="top-left-icon">
             <span class="material-symbols-outlined">home</span>
         </div>
@@ -323,10 +323,10 @@
         </div>
         <div class="about-content">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula neque sit amet nisl tincidunt, at fringilla est venenatis. Nulla facilisi. Donec scelerisque urna id neque bibendum, nec elementum lectus vestibulum. Vivamus vestibulum sapien et eros bibendum, ac ultricies metus consequat. Integer non dictum lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti.
+                Youth Vision is an innovative company focused on transforming the educational landscape through cutting-edge technology. Its flagship product, JELMS (Junior E-Learning Management System), is an advanced online education platform designed to make learning more engaging, accessible, and effective. JELMS provides learners with a wealth of resources, including diverse and comprehensive learning materials, interactive tools, and flexible access options. By catering to a wide range of educational needs, it ensures that users can enjoy a tailored and inclusive learning experience.
             </p>
             <p>
-                Curabitur sed urna a nisi vestibulum pharetra. Integer varius purus nec sagittis luctus. Donec eget sollicitudin eros, vel feugiat justo. In sed purus ut nisl varius varius. Sed tincidunt velit sed enim tincidunt, sit amet vulputate nisi consectetur. Aenean dapibus orci eget sapien gravida vestibulum. Duis non risus a arcu vestibulum malesuada.
+                The platform also offers significant benefits for educators and administrators by streamlining the management of online education. Features like automated progress tracking, customizable courses, and easy content integration allow for efficient teaching and learning processes. With JELMS, Youth Vision aims to bridge gaps in education, empower learners globally, and contribute to the evolution of modern learning methodologies.
             </p>
         </div>
         <div class="top-left-icon">
@@ -342,85 +342,85 @@
             {
                 name: "Carl Miranda",
                 role: "Leader",
-                bio: "N/A",
+                bio: "Bumili ang butiki na halang ang bituka sa botika ng Fentanyl",
                 image: "Carl.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Sebastian Sumperos",
                 role: "Programming Leader",
                 bio: ".Skibidi has Infected Me",
-                image: "Seb.gif"  //Guys dito ninyo lagay yung images :) please
+                image: "Seb.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Gerald Obiña",
                 role: "Programmer",
-                bio: "N/A",
+                bio: "Ang maliit na sasakyan ni Monico at ang makina ng Minica ni Monica",
                 image: "Gerald.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Cyrilkurt Agir",
                 role: "Programmer/Designer",
-                bio: "Can you rizz me till I goon", 
+                bio: "Can you skibidi my toilet until I rizz", 
                 image: "Agir.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Lorenzo Matienzo",
                 role: "Programmer",
-                bio: "Sa programming at athletics, pareho lang—sakit, ensayo, at push lang. Kung kaya mong mag-hurt sa training, kaya mo rin mag-debug para mag-improve.",
+                bio: "How many dudes did diddy diddle if diddy diddle dudes",
                 image: "Matienzo.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Jhonerey De Borja",
                 role: "Researcher",
-                bio: "N/A",
+                bio: "Makati sa Makati, may pari sa Aparri, mahihilo sa Iloilo at may bagyo sa Baguio.",
                 image: "De Borja.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Louisa Jane Pascua",
                 role: "Researcher",
-                bio: "N/A",
+                bio: "Sa pitong batuhan ng mga seal, nakaupo ang pitong angkan ng mga seal, na nagtututukan sa tadyang hanggang sa mahulog sila sa mga batuhan.",
                 image: "Pasqua.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Jayron Vistosa",
                 role: "Researcher",
-                bio: "N/A",
+                bio: "Kabilugan ng buwan, buwan ng kabilugan",
                 image: "Jayron.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             {
                 name: "Alliah Hal",
                 role: "Researcher",
-                bio: "N/A",
+                bio: "tapiko takupe tapiko takupe tapiko takupe",
                 image: "Ali Hall.jpg"  //Guys dito ninyo lagay yung images :) please
             },
             
             {
                 name: "Reign Seran",
                 role: "Researcher",
-                bio: "N/A",
+                bio: "Nakakapagpabagabag",
                 image: "Reign.jpg"  //Guys dito ninyo lagay yung images :) please
             },
         ];
 
         function createTeamMember(member, index) {
-            const delay = index * 0.2;
-            const memberElement = document.createElement('div');
-            memberElement.className = 'team-member';
-            memberElement.style.animation = `fadeInUp 0.8s forwards ${delay}s`;
+    const delay = index * 0.2;
+    const memberElement = document.createElement('div');
+    memberElement.className = 'team-member';
+    memberElement.style.animation = `fadeInUp 0.8s forwards ${delay}s`;
 
-            memberElement.innerHTML = `
-                <div class="member-image">
-                    <img src="${member.image}" alt="${member.name}">
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">${member.name}</h3>
-                    <p class="member-role">${member.role}</p>
-                    <p class="member-bio">${member.bio}</p>
-                </div>
-            `;
+    memberElement.innerHTML = `
+        <div class="member-image">
+            <img src="${member.image}" alt="${member.name}">
+        </div>
+        <div class="member-info">
+            <h3 class="member-name">${member.name}</h3>
+            <p class="member-role">${member.role}</p>
+            <p class="member-bio">"${member.bio}"</p> <!-- Bio starts and ends with quotes -->
+        </div>
+    `;
 
-            return memberElement;
-        }
+    return memberElement;
+}
 
         const teamGrid = document.getElementById('teamGrid');
         teamMembers.forEach((member, index) => {
