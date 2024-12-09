@@ -17,12 +17,22 @@ body {
 /* Sidebar Styles */
 .sidebar {
     width: 250px;
-    background-color: #72383d;
+background: linear-gradient(to right, #72383d, #3D212B);
+border: solid 5px #AC9C8D;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     color: white;
 }
-
+@media (max-width: 768px){
+    html, body{
+        overflow:hidden;
+    }
+    .sidebar{
+    border: solid 2px #AC9C8D;
+        width:100vw;
+    
+}
+}
 .sidebar-title {
     font-size: 24px;
     text-align: center;

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Terms and Conditions</title>
     <style>
   :root {
@@ -13,22 +14,31 @@
 
 
 .header {
+  border-radius:10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: var(--spacing);
-    background-color: #72383d;
+    background: linear-gradient(to right, #72383d, #3D212B);
+  border: solid 5px #AC9C8D;
     color: white;
-    height: var(--header-height);)
+    height: var(--header-height);
 }
-
+  @media (max-width: 768px){
+    .header{
+      border: solid 2px #AC9C8D;
+    }
+      .container{
+      border: solid 2px #AC9C8D;
+    }
+  }
 h1 {
     margin: 0;
     font-size: 1.5em;
 }
 
 .dashboard-button {
-  width:20%;
+  height:90%;
   aspect-ratio:1/1;
    background: rgba(0,0,0,0);
     border: none;
@@ -51,7 +61,7 @@ h1 {
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #FCDCDC;
+            background-color: #3D212B;
             color: #333;
         }
 #terms{
@@ -59,12 +69,16 @@ h1 {
  -webkit-text-stroke: 0.01em black;
 }
         .container {
+          margin-top:5%;
+            border-radius:10px;
+            border: solid 5px #AC9C8D;
+
             max-width: 90%;
-            margin: auto;
+            
             padding: 5%;
             background-color: #FCDCDC;
             box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
-            border-radius: 1%;
+           
         }
 
         h1, h2 {

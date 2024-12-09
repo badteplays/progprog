@@ -1,3 +1,10 @@
+.upperBorder, .upperlowerborder, .side, .rightborder, .maincont{
+    outline: solid 3px #AC9C8D !important;
+    
+}
+.upperlowerborder{
+    z-index:-1;
+}
 
 html{
     overflow:hidden;
@@ -61,7 +68,7 @@ transition: stroke 0.5s ease;
 }
 
 body {
-background-color: #332d29;
+background-color: #3D212B;
 
         overflow:hidden;
 
@@ -206,7 +213,7 @@ width: 20%;
 height: 100vh; 
 border-radius: 0.5em;
 border: solid 0.1em #72383d;
-background-color: #72383d;
+background: linear-gradient(to right, #72383d, #3D212B);
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 padding: 10px; 
 }
@@ -549,7 +556,7 @@ height: 4%;
 position: absolute;
 align-items: center;
 
-background-color: #72383d;
+background: linear-gradient(to right, #72383d, #3D212B);
 border: solid #72383d;
 }
 
@@ -559,7 +566,7 @@ height: 170%;
 right: 78.5%;
 position: absolute;
 border-radius: 25px;
-background-color: #72383d;
+background: linear-gradient(to right, #72383d, #3D212B);
 border: solid #72383d; 
 }
 
@@ -569,7 +576,7 @@ top: 0%;
 left: 100%;
 width: 10%;
 height: 100vh; 
-background-color: #72383d;
+background: linear-gradient(to right, #72383d, #3D212B);
 border: none; 
 border-radius: 25px;
 
