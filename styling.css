@@ -256,7 +256,7 @@ font-family: 'Dancing Script', cursive;
 position: relative;
 top: -30%;
 width: 40%;
-height: 10%;
+aspect-ratio:1/1;
 margin: 1%;
 overflow: hidden; 
 background-color: #72383d;
@@ -748,34 +748,34 @@ z-index: 5;
 
 }
 .icons:nth-child(1) {
-    background-image: url('drawingProfile.jpg');
+    background-image: url('Profile.png');
 }
 
 .icons:nth-child(2) {
-    background-image: url('DrawingFriends.jpg');
+    background-image: url('Friends.png');
 }
 
 .icons:nth-child(3) {
-    background-image: url('DrawingGrades.jpg');
+    background-image: url('Grades.png');
 }
 
 .icons:nth-child(4) {
-    background-image: url('Porfolio.jpg');
+    background-image: url('Locker.png');
 }
 
 
 .icons:nth-child(5) {
-    background-image: url('https://via.placeholder.com/150x150?text=Modules+Image');
+    background-image: url('Modules.png');
 }
 
 .icons:nth-child(6) {
-    background-image: url('https://via.placeholder.com/150x150?text=Assignments+Image');
+    background-image: url('Assignments.png');
 }
 
 .flexcol .flexrowar .icons:nth-child(1) {
-    background-image: url('Modules.jpg');
+    background-image: url('Modules.png');
 }
 
 .flexcol .flexrowar .icons:nth-child(2) {
-    background-image: url('DrawingAssignments.jpg');
+    background-image: url('Assignments.png');
 }
