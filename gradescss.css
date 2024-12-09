@@ -1,6 +1,43 @@
+body{
+background:  linear-gradient(to right, #72383d, #3D212B);
+}
+.users-online {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #AC9C8D;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #72383d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.1em;
+    width: 200px;
+    text-align: center;
+}
+
+.users-online h3 {
+    margin: 0 0 10px 0;
+}
+
+.profile-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-pictures img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+
 body {
     overflow:hidden;
-    background-color:#3D212B;
+    background#3D212B;
 }
 
 .username {
@@ -9,6 +46,7 @@ body {
    top:8%;
     z-index: 2;
     font-size: 1.3em;
+    color:white;
 }
 
 .profile-picture {
@@ -16,7 +54,7 @@ body {
     top: 5%;
     right: 8%;
     width: 6.5%;
-    height: 10%;
+    aspect-ratio:1/1;
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -95,23 +133,8 @@ top:58%;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    clip-path: circle();
+    background: conic-gradient(#AC9C8D 0% 50%, #ddd 50% 100%);
     position: relative;
-}
-
-.pie-section {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    clip-path: circle(50% at 50% 50%);
-}
-
-.pie-section.completed {
-    background: #AC9C8D;
-}
-
-.pie-section.remaining {
-    background: #ddd;
 }
 
 .pie-label {

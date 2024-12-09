@@ -10,7 +10,7 @@ body{
     position:absolute;
     width:100%;
     height:100%;
-    z-index:5;
+    z-index:10000;
     align-items: center;
     justify-content:center;
     animation:skadush 0.5s linear forwards 2s;
@@ -326,7 +326,7 @@ transition: 0.3 ease;
 transform: translateY(-2px);
 }
 .side-button:hover {
-background-color: #fcdcdc;
+background-color: lightcoral;
 transform: translateY(-2px);
 transition: 0.3s ease;
 font-family: 'Dancing Script', cursive;
@@ -349,7 +349,7 @@ font-family: 'Dancing Script', cursive;
 
 }
 
-a[href="help.html"] button {
+a[href="Help.html"] button {
 position: relative; 
 left: -130%;
 width: 350%;
@@ -402,7 +402,7 @@ border-radius: 0.5em ;
 border: solid 0.1em #FCDCDC;
 display: flex;
 flex-direction: column;
-background-color: #FCDCDC;
+background-color: #E6B4B4;
 }
 .flexrow{
 padding:2%;
@@ -427,12 +427,12 @@ aspect-ratio:1/1;
 background-color: #AC9C8D;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 .icons:hover {
 transform: translateY(-8px);
 transition: all 0.3s ease;
 background-color: #AC9C8D;
 border-color: #72383d;
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.6);
 }
 
 div.flexrow a {
@@ -485,7 +485,7 @@ width: 100%;
 .calendar-day {
 text-align: center;
 padding: 10px;
-background-color: #FCDCDC;
+background-color: #E6B4B4;
 border-radius: 0.5em;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -500,7 +500,7 @@ width: 100%;
 .calendar-date {
 text-align: center;
 padding: 10px;
-background-color: #FCDCDC;
+background-color: #E6B4B4;
 border-radius: 0.5em;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -713,7 +713,7 @@ input[type="text"], input[type="password"] {
 width: 95%;
 padding:2.5%;
  border: 1px solid #ccc;
-  background: #FCDCDC;
+  background: #E6B4B4;
 border-radius:1vw;
     }
 
