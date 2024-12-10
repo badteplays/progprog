@@ -143,7 +143,7 @@
         <div class="rightborder">
             <button class="UploadModule">Upload Module
                 <button class="GAssignments">Grade Assignments
-                    <button class="Announce">Announcements
+                    <button class="Announce" id="Announce">Announcements
         </div>
         
         <div>
@@ -178,6 +178,14 @@
         </div>
     </div>
     <div class="Jelms">JELMS</div>
+                        <script>
+
+
+                            document.getElementById('Announce').addEventListener('click', function() {
+    window.location.href = 'dashboard.html';
+});
+
+                        </script>
     </body>
     
            
@@ -188,4 +196,5 @@
        
        
 
-</html>
+
+                        
