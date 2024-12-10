@@ -836,7 +836,7 @@ body {
 }
 
 .contact-us {
-    width:90vw;
+    width:40vw;
     aspect-ratio:16/9;
     border: inset 0.7em var(--primary-color);
     position: fixed;
