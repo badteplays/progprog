@@ -84,7 +84,7 @@ position: absolute;
 
 .Jelms {
     position: absolute;
-    top: 2%;
+    top:0.3%;
     left: 8%;
     z-index: 5;
     font-family: 'Times New Roman', Times, serif;
@@ -219,6 +219,8 @@ padding: 10px;
 }
 
 .side-content {
+    margin-top: 10%
+;
 display: flex;
 flex-direction: column;
 align-items: center;
